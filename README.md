@@ -1,3 +1,5 @@
+This is a simple script to convert a Slack export to Mattermost import format.
+
 Create an export via [Slack Export feature](https://artpolis-space.slack.com/services/export). Run it as `python converter.py <folder-with-slack-export> output.jsonl`. It does not support attachments and a lot of bell and whistles. Just basic messages. Note that it is not idempotent as docs suggest. E.g. if it fails after you start loading e.g. users, you then have to not load the users again. 
 
 You have to then:
